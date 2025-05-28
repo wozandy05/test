@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <base href="/test/dist/number_puzzle/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../tools/favicon.png"/>
+
+  <title>Calculator</title>
+  
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="../tools/flutter.js" defer></script>
+</head>
+<body>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
